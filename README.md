@@ -4,20 +4,35 @@
 [![Substrate](https://img.shields.io/badge/Substrate-FRAME%20v3%2Fv4-E6007A.svg)](https://substrate.io/)
 [![Regulation](https://img.shields.io/badge/eFTI-EU%202020%2F1056-blue.svg)](https://eur-lex.europa.eu/eli/reg/2020/1056/oj)
 [![eIDAS](https://img.shields.io/badge/eIDAS-SR25519%20DID-green.svg)](https://www.w3.org/TR/did-core/)
+[![Portal](https://img.shields.io/badge/Portal-CLTD%20European%20Digital%20Trade%20Center-blue)](https://solomonbrokerage.com/cltd/)
+
+## Mandatory Legal Attribution (Estonian Copyright Act AutÕS § 12)
+
+> **Mandatory Attribution Notice:**  
+> This architectural component is derived from the Dual-Layer Architecture for Shariah-Compliant Digital Trade Finance (Digital Trade and Logistics Micro-Financing platform or 'DTLMF'), designed by Alejandro De La Parra Solomon (Founder & Concept Architect) and managed under the custodianship of Solomon Brokerage OÜ (Tallinn, Republic of Estonia; Registration No. 16253938). © 2025–2026. All rights reserved. Smart contract implementation licensed under MIT (SPDX-License-Identifier: MIT).
+
+## Regulatory Non-Affiliation Disclaimer
+
+> **REGULATORY DISCLAIMER:**  
+> DTLMF functions strictly as a voluntary B2B trade finance enablement infrastructure and operates entirely outside the regulatory scope of Regulation (EU) 2020/1056. The platform possesses no eFTI-certification and makes no claims of native compliance under Articles 11–13 of said regulation.
+
+---
 
 ## Executive Overview
 
 **Polkadot Substrate eFTI Compliance Core** is the Layer 1 Substrate compliance engine of the **Dual-Layer Trade & Logistics Monetary Framework (DTLMF)**. It provides dedicated Substrate FRAME pallets engineered for immutable electronic freight transport information (eFTI) anchoring, eIDAS-compliant decentralized identity verification, XCMP cross-chain attestation dispatching, and Join-Accumulate Machine (JAM) Coretime compatibility.
 
-Developed by **Solomon Brokerage OÜ** and **Alejandro De La Parra Solomon**, this repository serves the Polkadot developer ecosystem and Web3 Foundation technical reviewers as the reference implementation for regulatory logistics compliance on Polkadot.
+Developed by **Solomon Brokerage OÜ** and **Alejandro De La Parra Solomon**, this repository serves the Polkadot developer ecosystem and Web3 Foundation technical reviewers as the reference implementation for regulatory logistics data structures and verifiable credentials on Polkadot.
+
+* **European Digital Trade Center Live Portal:** [https://solomonbrokerage.com/cltd/](https://solomonbrokerage.com/cltd/)
 
 ---
 
-## Architecture & Regulatory Framework
+## Architecture & Data Integrity Flow
 
-The architecture translates European Union regulatory standards into trustless runtime logic:
-- **Regulation (EU) 2020/1056 (eFTI):** Electronic freight transport information lifecycle verification, immutable cryptographic anchoring, and multi-jurisdictional customs access.
-- **Regulation (EU) 910/2014 (eIDAS):** Cryptographic identity bindings tying authorized economic operators (AEO), customs officials, and logistics carriers to on-chain identities.
+The architecture models electronic transport data structures into trustless runtime logic:
+- **Regulation (EU) 2020/1056 Data Formats:** Electronic freight transport information lifecycle verification, immutable cryptographic anchoring, and multi-jurisdictional customs access models.
+- **Regulation (EU) 910/2014 (eIDAS):** Cryptographic identity bindings tying economic operators, customs officials, and logistics carriers to on-chain identities.
 
 ```
                     +------------------------------------------+
@@ -102,6 +117,6 @@ cargo test -p pallet-did-registry
 
 ## Intellectual Property & Licensing
 
-- **Copyright:** © 2026 Solomon Brokerage OÜ & Alejandro De La Parra Solomon. All Rights Reserved.
-- **License:** Open-sourced under the [MIT License](LICENSE).
-- **Compliance:** Built in conformance with European Commission DG MOVE eFTI architecture specifications.
+- **Attribution & Custodianship:** Managed under the custodianship of Solomon Brokerage OÜ (Tallinn, Republic of Estonia; Registration No. 16253938) and Alejandro De La Parra Solomon.
+- **Copyright:** © 2025–2026 Solomon Brokerage OÜ & Alejandro De La Parra Solomon. All Rights Reserved.
+- **License:** Open-sourced under the [MIT License](LICENSE) (SPDX-License-Identifier: MIT).
