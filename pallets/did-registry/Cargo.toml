@@ -1,0 +1,30 @@
+[package]
+name = "pallet-did-registry"
+version = "0.2.0"
+edition = "2021"
+authors = ["Alejandro De La Parra Solomon <info@solomonbrokerage.com>"]
+description = "DTLMF DID Registry Pallet — W3C Decentralized Identity (V1.8 Shariah-Compliant)"
+license = "MIT"
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "3.6.1", default-features = false, features = ["derive"] }
+scale-info = { version = "2.10.0", default-features = false, features = ["derive"] }
+frame-support = { default-features = false, git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+frame-system = { default-features = false, git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sp-std = { default-features = false, git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sp-runtime = { default-features = false, git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+
+[dev-dependencies]
+sp-core = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sp-io = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+
+[features]
+default = ["std"]
+std = [
+	"codec/std",
+	"scale-info/std",
+	"frame-support/std",
+	"frame-system/std",
+	"sp-std/std",
+	"sp-runtime/std",
+]

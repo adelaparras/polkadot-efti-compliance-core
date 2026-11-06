@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "pallets/did-registry",
+    "pallets/efti-anchor-vc",
+]
+resolver = "2"
